@@ -1,0 +1,21 @@
+header.header.pt-3
+  .container.container__customized_xl.container__customized_sm
+    nav.navbar.navbar__theme.navbar-expand-xl(role='navigation')
+      a.navbar-brand.wow.fadeInDown(href='/' role='banner' title='Логотип Рустрансфер')
+        +logo-header
+      .navbar-collapse.navbar-collapse__theme
+        .navbar-collapse__media-theme
+          ul.navbar-nav.navbar-nav__contacts.navbar-nav__contacts_mt-2.navbar-nav__contacts_mt-lg-0
+            li.nav-item()
+              a.nav-link.wow.fadeInDown(href='tel:88002004017' data-wow-delay='0.2s' role='link')
+                +phone
+                span 8-800-200-4017
+            li.nav-item
+              .nav-link.nav-link__line.wow.fadeInDown(data-wow-delay='0.4s') |
+            li.nav-item
+              a.nav-link.nav-link_pr-8.wow.fadeInDown(href='mailto:info@rustransfer.org' data-wow-delay='0.4s' role='link')
+                +mail
+                span info@rustransfer.org
+            li.nav-item.dropdown.nav-item__tablet
+              a.nav-link.nav-link_pr-0.wow.fadeInDown(onclick="Marquiz.showModal('5e8cb47344a4300055554125')" title='' data-wow-delay='0.6s' role='link')
+                span.nav-link__account Получить консультацию

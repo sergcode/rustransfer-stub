@@ -1,0 +1,14 @@
+.idea
+.env
+.env-dist
+/docker/
+/node_modules/
+/public/
+/src/assets/backup/
+/src/assets/docs/
+default.conf
+docker-compose.dev.yml
+docker-compose.yml
+package-lock.json
+yarn.lock
+npm-debug.log

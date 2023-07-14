@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: #
+Host: rustransfer.org
+
+Sitemap: https://rustransfer.org/sitemap.xml
+User-agent: Bingbot
+Disallow: /

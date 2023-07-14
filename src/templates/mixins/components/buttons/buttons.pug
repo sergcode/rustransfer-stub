@@ -1,0 +1,31 @@
+mixin button-large(title, submit, button, target, position)
+
+  .button__wrapper.button_pb-2(class=position)
+    button.button.button__large_red.mt-auto(type=submit role=buttons target=target)=title
+
+mixin button-large-middle(title, submit, button, target)
+
+  .button__wrapper.button_pb-2
+    button.button.button__large_red.button__large_middle.mt-auto(type=submit role=buttons target=target)=title
+
+mixin button-large-middle-less(title, submit, button, target, position)
+
+  .button__wrapper.button_pb-2
+    button.button.button__large_red.button__large_middle.button__large_middle-less.mt-auto(type=submit role=buttons target=target class=position)=title
+
+mixin button-middle(title, submit, button)
+
+  button.button.button__middle_blue.mt-auto(type=submit role=buttons)=title
+    .the-arrow.-right
+      .shaft
+
+mixin button-small-blue(title, button, addClass, cookie)
+
+  a.button.button__small.button__small_blue(role=buttons class=addClass href=cookie)=title
+
+mixin button-small-red(title, button, addClass, cookie)
+
+  a.button.button__small.button__small_red(role=buttons class=addClass href=cookie)=title
+
+
+

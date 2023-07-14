@@ -1,0 +1,106 @@
+extends ../templates/layouts/default
+
+include ../templates/mixins/components/buttons/buttons
+block vars
+  -
+    title = 'Home'
+    stylePath = ''
+block content
+  section.header-video
+    .header-video__main
+      .container.container__customized_xl.container__customized_sm
+        .row.justify-content-center
+          .col-lg-12.header-video__main-block
+            p.subtitle.subtitle__big.wow.fadeInRight(data-wow-delay='0.6s')
+              | Трансфер
+            .title.title_pt-3-5
+              .header-video__arrow-down.wow.fadeInDown(data-wow-delay='0.8s')
+                .header-video__arrow-down-text
+                  | более 630 аэропортов мира
+                +svg-arrow-down
+              .title__block.flex-column
+                h1.wow.fadeInRight(data-wow-delay='0.7s')
+                  | Трансфер и аренда
+                  br
+                  | автотранспорта с водителем
+                p.signature.wow.fadeInRight(data-wow-delay='0.8s')
+                  | В самых важных городах и аэропортах мира
+                a.button.button__lg_blue.mt-auto.wow.fadeInRight(onclick="Marquiz.showModal('5e8cb47344a4300055554125')" data-wow-delay='0.9s')
+                  | Сделать заказ
+                  .the-arrow.-right
+                    .shaft
+          .col-lg-12.header-video__number-block
+            .row.justify-content-between.header-video__number-block_media
+              .header-video__col-lt.col-6.col-sm-4.col-lg-4.col-xl-2.header-video__md
+                .numbers-block.wow.fadeInRight(data-wow-delay='1.1s')
+                  .numbers-block__svg-icon
+                    +planet
+                    +svg-arrow-down-right
+                  .numbers-block__theme
+                    .counter.numbers-block__counter(data-counterup-time="3000" data-counterup-delay="50") 195
+                    .numbers-block__description
+                      | Стран&nbsp;
+                      br
+                      | обслуживания
+
+              .header-video__col-lt.col-6.col-sm-4.col-lg-4.col-xl-2.header-video__md
+                .numbers-block.wow.fadeInRight(data-wow-delay='1.3s')
+                  .numbers-block__svg-icon
+                    +aeroplane
+                    +svg-arrow-down-right
+                  .numbers-block__theme
+                    .counter.numbers-block__counter(data-counterup-time="3000" data-counterup-delay="50") 630
+                    .numbers-block__description Аэропортов
+
+              .header-video__col-lt.col-6.col-sm-4.col-lg-4.col-xl-2.header-video__md
+                .numbers-block.wow.fadeInRight(data-wow-delay='1.5s')
+                  .numbers-block__svg-icon
+                    +man
+                    +svg-arrow-down-right
+                  .numbers-block__theme
+                    .counter.numbers-block__counter(data-counterup-time="3000" data-counterup-delay="50") 620
+                    .numbers-block__description
+                      | Аккредитованных&nbsp;
+                      br
+                      | поставщиков
+
+              .header-video__col-lt.col-6.col-sm-4.col-lg-4.col-xl-2.header-video__md
+                .numbers-block.wow.fadeInRight(data-wow-delay='1.7s')
+                  .numbers-block__svg-icon
+                    +steering-wheel
+                    +svg-arrow-down-right
+                  .numbers-block__theme
+                    .counter.numbers-block__counter(data-counterup-time="3000", data-counterup-delay="50") 10
+                    .numbers-block__description
+                      | Классов&nbsp;
+                      br
+                      | автомобилей
+
+              .header-video__col-lt.col-6.col-sm-4.col-lg-4.col-xl-2.header-video__md
+                .numbers-block.wow.fadeInRight(data-wow-delay='1.9s')
+                  .numbers-block__svg-icon
+                    +peoples
+                    +svg-arrow-down-right
+                  .numbers-block__theme
+                    .numbers-block__counter
+                      .counter(data-counterup-time="3000" data-counterup-delay="50") 500
+                      span +
+                    .numbers-block__description
+                      | КОРПОРАТИВНЫХ&nbsp;
+                      br
+                      | КЛИЕНТОВ
+
+    .header-video__wave.wow.fadeIn(data-wow-delay='0' data-wow-duration='0')
+    .header-video__iframe.wow.fadeIn(data-wow-delay='0' data-wow-duration='0')
+      //video.header-video__video(loop='', autoplay='', preload='true', muted='', data-reactid='.4.0.0', width='100%', height='auto')
+      //  source(src='../assets/img/header/albatros-video.mp4', data-reactid='.4.0.0.0')
+      //  p К сожаленью ваш браузер не поддерживает HTML5 видео в WebM с VP8 или MP4 с H.264.
+
+  +cookie
+
+
+
+
+
+
+

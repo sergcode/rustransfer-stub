@@ -1,0 +1,28 @@
+/* default styles */
+@import './variables';
+@import './mixins/mixins';
+@import './fonts';
+@import './color-theme';
+@import './theme';
+@import './default';
+
+/* components Rustransfer */
+@import './сomponents/button';
+@import './сomponents/arrow';
+@import './сomponents/numbers-block';
+@import './сomponents/hamburger';
+@import './сomponents/cookie';
+@import './сomponents/footer';
+@import './сomponents/grid';
+
+/* header styles */
+@import './header/header';
+
+/* header-video style */
+@import './header-video/header-video';
+@import './wrapper/wrapper';
+@import './zadarma/zadarma';
+
+
+
+

@@ -1,0 +1,150 @@
+.button {
+
+  border: 0;
+  font-family: $verdana-regular;
+  font-weight: 100;
+  text-decoration: none;
+  @include inline-flex-center-wrap();
+  text-align: center;
+  justify-content: center;
+  visibility: hidden;
+
+  @media only screen and (max-width: 768px) {
+    visibility: visible;
+  }
+
+  &__lg {
+
+    &_blue {
+
+      background: $blue-color-one;
+      box-shadow: -2px 2px 2px $black-color-rgba-two;
+      font-size: 14px;
+      text-align: center;
+      position: relative;
+      color: $white-color-one;
+      text-transform: uppercase;
+      width: 100%;
+      max-width: 250px;
+      padding: 1.3rem 0 1.3rem 2rem;
+      transition: box-shadow .5s ease, transform .5s ease;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 15px 22px $black-color-rgba-three;
+        color: $white-color-one;
+        text-decoration: none;
+
+        .the-arrow.-right > .shaft {
+          width: 35px;
+        }
+
+      }
+
+      @media only screen and (max-width: 520px) {
+        padding: .8rem 0 .8rem 2rem;
+      }
+
+      @media only screen and (max-width: 360px) {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      @media only screen and (max-width: 310px) {
+        padding: .8rem 0 .8rem;
+
+        .the-arrow {
+
+          display: none;
+
+        }
+
+      }
+
+    }
+
+    &_mt-auto {
+
+      margin-top: auto;
+
+    }
+
+  }
+
+  &__small {
+
+    line-height: 3.3em;
+    padding: 0 2rem 0;
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+    color: $white-color-one !important;
+    border: 0 !important;
+    border-radius: 2px;
+    cursor: pointer;
+    visibility: visible;
+    transition: all .3s ease;
+
+    &_red {
+
+      background: $red-color-one;
+      color: $white-color-one;
+      max-width: 188px;
+      box-shadow: 0 2px 4px $black-color-rgba-four;
+      text-align: center;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 8px $black-color-rgba-five, 0 0 8px $black-color-rgba-six;
+        color: $white-color-one;
+        text-decoration: none;
+        background: $red-color-three;
+
+      }
+
+      @media only screen and (max-width: 360px) {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    }
+
+    &_blue {
+
+      background: $blue-color-one;
+      color: $white-color-one;
+      max-width: 188px;
+      box-shadow: 0 2px 4px $black-color-rgba-four;
+      text-align: center;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 8px $black-color-rgba-five, 0 0 8px $black-color-rgba-six;
+        color: $white-color-one;
+        text-decoration: none;
+        background: $blue-color-three;
+
+      }
+
+      @media only screen and (max-width: 360px) {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    }
+
+    &_mt-auto {
+
+      margin-top: auto;
+
+    }
+
+  }
+
+}
